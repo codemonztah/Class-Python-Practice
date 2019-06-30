@@ -1,0 +1,19 @@
+influencers = {
+        "Xiaxue" : 245654,
+        "Roy": 823,
+        "BrownieTv": 53233
+}
+
+views_to_check = influencers["BrownieTv"]
+
+if views_to_check<50000:
+    payment=0
+    print(payment)
+elif views_to_check>=50000 and views_to_check<=100000:
+    payment=views_to_check*0.01
+    print(payment)
+elif views_to_check>100000:
+    payment=views_to_check*0.05
+    print(payment)
+else:
+    print("Invalid view number")
